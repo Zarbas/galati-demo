@@ -13,7 +13,7 @@ import com.demo.galatidemo.entity.User;
  * limited functions.
  */
 
-@Database(entities = {User.class, Post.class, Comment.class}, version = 1)
+@Database(entities = {User.class, Post.class, Comment.class}, version = 1, exportSchema = false)
 public abstract class AppDB extends RoomDatabase {
 
     abstract public UserDao userDao();
